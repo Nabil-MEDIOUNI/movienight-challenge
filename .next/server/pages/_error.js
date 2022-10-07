@@ -1,153 +1,25 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 820;
-exports.ids = [820];
+exports.id = "pages/_error";
+exports.ids = ["pages/_error"];
 exports.modules = {
 
-/***/ 2648:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ "./src/pages/_error.tsx":
+/*!******************************!*\
+  !*** ./src/pages/_error.tsx ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var __webpack_unused_export__;
-
-__webpack_unused_export__ = ({
-    value: true
-});
-exports.Z = _interopRequireDefault;
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-
-
-/***/ }),
-
-/***/ 9651:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-
-var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
-
-var _react = _interop_require_default(__webpack_require__(6689));
-
-var _head = _interop_require_default(__webpack_require__(4957));
-
-const statusCodes = {
-  400: 'Bad Request',
-  404: 'This page could not be found',
-  405: 'Method Not Allowed',
-  500: 'Internal Server Error'
-};
-
-function _getInitialProps({
-  res,
-  err
-}) {
-  const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
-  return {
-    statusCode
-  };
-}
-
-const styles = {
-  error: {
-    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
-    height: '100vh',
-    textAlign: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  desc: {
-    display: 'inline-block',
-    textAlign: 'left',
-    lineHeight: '49px',
-    height: '49px',
-    verticalAlign: 'middle'
-  },
-  h1: {
-    display: 'inline-block',
-    margin: 0,
-    marginRight: '20px',
-    padding: '0 23px 0 0',
-    fontSize: '24px',
-    fontWeight: 500,
-    verticalAlign: 'top',
-    lineHeight: '49px'
-  },
-  h2: {
-    fontSize: '14px',
-    fontWeight: 'normal',
-    lineHeight: '49px',
-    margin: 0,
-    padding: 0
-  }
-};
-
-var _Component;
-
-class Error extends (_Component = _react.default.Component) {
-  render() {
-    const {
-      statusCode,
-      withDarkMode = true
-    } = this.props;
-    const title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
-    return /*#__PURE__*/_react.default.createElement("div", {
-      style: styles.error
-    }, /*#__PURE__*/_react.default.createElement(_head.default, null, /*#__PURE__*/_react.default.createElement("title", null, statusCode ? `${statusCode}: ${title}` : 'Application error: a client-side exception has occurred')), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("style", {
-      dangerouslySetInnerHTML: {
-        __html: `
-                body { margin: 0; color: #000; background: #fff; }
-                .next-error-h1 {
-                  border-right: 1px solid rgba(0, 0, 0, .3);
-                }
-
-                ${withDarkMode ? `@media (prefers-color-scheme: dark) {
-                  body { color: #fff; background: #000; }
-                  .next-error-h1 {
-                    border-right: 1px solid rgba(255, 255, 255, .3);
-                  }
-                }` : ''}`
-      }
-    }), statusCode ? /*#__PURE__*/_react.default.createElement("h1", {
-      className: "next-error-h1",
-      style: styles.h1
-    }, statusCode) : null, /*#__PURE__*/_react.default.createElement("div", {
-      style: styles.desc
-    }, /*#__PURE__*/_react.default.createElement("h2", {
-      style: styles.h2
-    }, this.props.title || statusCode ? title : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, "Application error: a client-side exception has occurred (see the browser console for more information)"), "."))));
-  }
-
-}
-
-Error.displayName = 'ErrorPage';
-Error.getInitialProps = _getInitialProps;
-Error.origGetInitialProps = _getInitialProps;
-exports["default"] = Error;
-
-/***/ }),
-
-/***/ 4957:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/head.js");
-
-/***/ }),
-
-/***/ 6689:
-/***/ ((module) => {
-
-module.exports = require("react");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst Error = ({\n  statusCode\n}) => {\n  return /*#__PURE__*/React.createElement(\"p\", null, statusCode ? `An error ${statusCode} occurred on server` : 'An error occurred on client');\n};\n\nError.getInitialProps = ({\n  res,\n  err\n}) => {\n  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;\n  return {\n    statusCode\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Error);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2Vycm9yLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBRUEsTUFBTUEsS0FBb0IsR0FBRyxDQUFDO0VBQUVDO0FBQUYsQ0FBRCxLQUFvQjtFQUMvQyxvQkFDRSwrQkFDR0EsVUFBVSxHQUNOLFlBQVdBLFVBQVcscUJBRGhCLEdBRVAsNkJBSE4sQ0FERjtBQU9ELENBUkQ7O0FBVUFELEtBQUssQ0FBQ0UsZUFBTixHQUF3QixDQUFDO0VBQUVDLEdBQUY7RUFBT0M7QUFBUCxDQUFELEtBQWtCO0VBQ3hDLE1BQU1ILFVBQVUsR0FBR0UsR0FBRyxHQUFHQSxHQUFHLENBQUNGLFVBQVAsR0FBb0JHLEdBQUcsR0FBR0EsR0FBRyxDQUFDSCxVQUFQLEdBQW9CLEdBQWpFO0VBQ0EsT0FBTztJQUFFQTtFQUFGLENBQVA7QUFDRCxDQUhEOztBQUtBLGlFQUFlRCxLQUFmIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbW92aWVuaWdodC1jaGFsbGVuZ2UvLi9zcmMvcGFnZXMvX2Vycm9yLnRzeD8wMDQ1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB0eXBlIHsgTmV4dFBhZ2UgfSBmcm9tICduZXh0JztcclxuXHJcbmNvbnN0IEVycm9yOiBOZXh0UGFnZTxhbnk+ID0gKHsgc3RhdHVzQ29kZSB9KSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxwPlxyXG4gICAgICB7c3RhdHVzQ29kZVxyXG4gICAgICAgID8gYEFuIGVycm9yICR7c3RhdHVzQ29kZX0gb2NjdXJyZWQgb24gc2VydmVyYFxyXG4gICAgICAgIDogJ0FuIGVycm9yIG9jY3VycmVkIG9uIGNsaWVudCd9XHJcbiAgICA8L3A+XHJcbiAgKTtcclxufTtcclxuXHJcbkVycm9yLmdldEluaXRpYWxQcm9wcyA9ICh7IHJlcywgZXJyIH0pID0+IHtcclxuICBjb25zdCBzdGF0dXNDb2RlID0gcmVzID8gcmVzLnN0YXR1c0NvZGUgOiBlcnIgPyBlcnIuc3RhdHVzQ29kZSA6IDQwNDtcclxuICByZXR1cm4geyBzdGF0dXNDb2RlIH07XHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBFcnJvcjtcclxuIl0sIm5hbWVzIjpbIkVycm9yIiwic3RhdHVzQ29kZSIsImdldEluaXRpYWxQcm9wcyIsInJlcyIsImVyciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/pages/_error.tsx\n");
 
 /***/ })
 
@@ -158,7 +30,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(9651));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/_error.tsx"));
 module.exports = __webpack_exports__;
 
 })();
