@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Search } from '@components';
 
-const Layout: React.FC = ({ children }: any) => {
+const Layout: React.FC<any> = ({ children }) => {
   return (
     <div className="container">
       <header className="mb-14 container">

@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/search": "pages/search.js"
+  "/movie/[id]": "pages/movie/[id].js",
+  "/": "pages/index.js",
+  "/search": "pages/search.js",
+  "/404": "pages/404.html"
 }

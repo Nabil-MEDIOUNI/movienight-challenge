@@ -103,7 +103,7 @@ const Search: React.FC = () => {
         >
           <ul>
             <span className="block font-light text-sm tracking-widest uppercase my-2 px-3">
-              Recent searches
+              Recherches récentes
             </span>
             {history?.map((item) => (
               <li key={item}>
