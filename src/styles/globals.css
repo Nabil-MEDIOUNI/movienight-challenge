@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #2b2b2b !important;
+  font-family: Archivo-Light;
+}
+
+@font-face {
+  font-family: "Archivo-Bold";
+  src: url("./fonts/Archivo-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-Light";
+  src: url("./fonts/Archivo-Light.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-Medium";
+  src: url("./fonts/Archivo-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Archivo-Regular";
+  src: url("./fonts/Archivo-Regular.ttf");
+}
+
+.font-Archivo {
+  font-family: Archivo-Regular;
+}
+
+.font-Archivo-Bold {
+  font-family: Archivo-Bold;
+}
