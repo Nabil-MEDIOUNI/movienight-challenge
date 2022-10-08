@@ -28,7 +28,7 @@ Start website in developer mode
 
 ```shell
 cd movienight-challenge
-yarn start
+yarn dev
 
 create .env file and insert this data:
 BASE_URL = https://api.themoviedb.org/3
