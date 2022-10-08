@@ -2,6 +2,12 @@
   Movienight Challenge
 </h1>
 
+<h1>
+  Link to project deployed on Vercel
+</h1>
+
+https://movienight-challenge-m6a0zm47q-nabil-mediouni.vercel.app
+
 Intro Description
 
 # Essential rules
