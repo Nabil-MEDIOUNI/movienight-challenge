@@ -29,9 +29,10 @@ const Search = ({
           <br />
           {movies.total_results} résultats
         </h1>
-        <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 my-14">
-          {movies.results.map((movie) => {
-            return (
+        <section className="mt-10">
+          <h2 className="mb-5 text-white text-xl">Films Similaires</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            {movies.results.map((movie) => (
               <MovieCard
                 key={movie.id}
                 movie={{
@@ -39,10 +40,9 @@ const Search = ({
                   backdrop_path: imageURL + movie.backdrop_path,
                   poster_path: imageURL + movie.poster_path,
                 }}
-                horizontal
               />
-            );
-          })}
+            ))}
+          </div>
         </section>
         <nav
           className="flex items-center justify-center mb-5"

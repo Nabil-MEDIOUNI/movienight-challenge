@@ -33,7 +33,6 @@ yarn start
 create .env file and insert this data:
 BASE_URL = https://api.themoviedb.org/3
 TMDB_API_KEY = API_KEY
-TMDB_API_URL = https://api.themoviedb.org/3
 TMDB_IMAGE_URL = https://image.tmdb.org
 
 ```
