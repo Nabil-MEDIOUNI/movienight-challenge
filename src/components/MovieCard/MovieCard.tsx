@@ -42,7 +42,7 @@ export const MovieCard: React.FC<MovieCardProps> = ({
               />
             )}
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-slate-500/50 transition-opacity duration-300">
-              <span className="text-white text-lg font-medium bg-slate-900/70 border border-slate-100/50 rounded-full px-3 py-2">
+              <span className="text-white text-sm font-medium bg-slate-900/70 border border-slate-100/50 rounded-full px-3 py-2">
                 Voir Détails
               </span>
             </div>
